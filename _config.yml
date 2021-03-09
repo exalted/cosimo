@@ -1,0 +1,15 @@
+defaults:
+  -
+    # default layout for all pages
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-optional-front-matter
+
+# jekyll-optional-front-matter
+optional_front_matter:
+  remove_originals: true
