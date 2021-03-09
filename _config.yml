@@ -9,6 +9,7 @@ defaults:
 
 plugins:
   - jekyll-optional-front-matter
+  - jekyll-postcss
 
 # jekyll-optional-front-matter
 optional_front_matter:
