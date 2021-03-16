@@ -5,5 +5,10 @@ trap "echo 'error: Script failed: see failed command above'" ERR
 
 cd "$(dirname "$0")/.."
 
-bundle exec jekyll serve --livereload
+
 # JEKYLL_ENV=production bundle exec jekyll build
+
+concurrently --names "jekyll,postcss" --kill-others \
+  'bundle exec jekyll serve --livereload' \
+  'npx postcss styles.css --output _site/styles.css --watch' \
+|| true

@@ -8,5 +8,4 @@ gem "jekyll", "~> 4.2"
 
 group :jekyll_plugins do
   gem 'jekyll-optional-front-matter', '~> 0.3.2'
-  gem 'jekyll-postcss', '~> 0.4.0'
 end

@@ -9,7 +9,6 @@ defaults:
 
 plugins:
   - jekyll-optional-front-matter # Markdown files to not require front matter
-  - jekyll-postcss
 
 # jekyll-optional-front-matter
 optional_front_matter:
