@@ -1,0 +1,36 @@
+<!-- prettier-ignore -->
+{% assign path = "/quotes/" | append: page.quote %}
+{% assign quote = site.quotes | find:"id", path %}
+
+<div class="{{ page.bg-color }} py-6 md:py-16">
+  <hr class="md:hidden mb-2 mx-auto w-16 border-2 border-green-600" />
+
+  <div
+    class="2xl:container mx-auto px-4 md:grid md:grid-cols-3 md:gap-4 space-y-3 md:space-y-0"
+  >
+    <div class="md:col-span-2 space-y-8">
+      <h1
+        class="text-center md:text-left text-2xl md:text-4xl font-bold text-green-600"
+      >
+        {{ page.title }}
+      </h1>
+      <div class="hidden md:block max-w-prose text-xl font-light space-y-6">
+        {{ content }}
+      </div>
+    </div>
+    <div class="h-0 aspect-w-16 aspect-h-9 -mx-4 md:mx-0">
+      <img
+        class="object-cover {{ page.image-position }} md:rounded-lg md:shadow-lg"
+        src="/assets/img/{{ page.image }}"
+        alt=""
+      />
+    </div>
+    <div class="md:hidden max-w-prose text-lg font-light space-y-4">
+      {{ content }}
+    </div>
+
+    <!-- <{{quote.path}}> -->
+    {{ quote.output }}
+    <!-- </{{quote.path}}> -->
+  </div>
+</div>

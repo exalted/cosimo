@@ -8,7 +8,8 @@ cd "$(dirname "$0")/.."
 
 # JEKYLL_ENV=production bundle exec jekyll build
 
-concurrently --names "jekyll,postcss" --kill-others \
-  'bundle exec jekyll serve --livereload' \
+concurrently --names "jekyll,postcss,prettier" --kill-others \
+  'bundle exec jekyll serve --open-url --livereload' \
   'npx postcss styles.css --output _site/styles.css --watch' \
+  'npx onchange "**/*.html" "**/*.md" --exclude-path .gitignore -- npx prettier --write {{changed}}' \
 || true

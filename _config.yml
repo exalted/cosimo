@@ -13,3 +13,14 @@ plugins:
 # jekyll-optional-front-matter
 optional_front_matter:
   remove_originals: true
+
+# Order of these matter!
+# (For example: `home_sections` uses `quotes`, therefore `quotes` is positioned
+# before `home_sections`.)
+collections:
+  quotes:
+  home_sections:
+    order:
+      - quando-chiedere-aiuto.md
+      - sintomo.md
+      - trattamento.md
