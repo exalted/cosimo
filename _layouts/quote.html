@@ -1,23 +1,28 @@
-<div class="md:pt-4">
+<!-- prettier-ignore -->
+{% if page.image %}
+  {% assign class="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4 pl-2 md:pl-0 rounded-lg border-l-4 md:border-l-0 border-green-300 md:shadow-2xl md:w-1/2 mx-auto" %}
+{% else %}
+  {% assign class="p-2 md:p-4 rounded-lg border-l-4 border-green-300 md:shadow-2xl md:w-1/2 mx-auto" %}
+{% endif %}
+
+<div class="{{ class }} {{ page.bg-color }}">
+  <div class="md:hidden col-span-2 font-light">
+    <span class="italic font-serif">{{ content }}</span>
+    {{ page.author }}
+  </div>
+  {% if page.image %}
+  <div class="h-0 aspect-w-3 aspect-h-4">
+    <img
+      class="object-cover rounded-lg md:rounded-l-lg md:rounded-r-none shadow-md"
+      src="/assets/img/{{ page.image }}"
+      alt=""
+    />
+  </div>
+  {% endif %}
   <div
-    class="{% if page.image %} grid grid-cols-3 gap-2 {% endif %} md:gap-4 p-2 md:pt-4 md:pb-4 {% if page.image %} md:pr-4 md:pl-0 {% else %} md:pr-4 md:pl-4 {% endif %} rounded-lg border-l-2 {% if page.image %} md:border-l-0 md:border-r-2 {% else %} md:border-l-2 md:border-r-0 {% endif %} border-green-400 bg-gradient-to-r {% if page.image %} md:bg-gradient-to-l {% else %} md:bg-gradient-to-r {% endif %} from-green-100"
+    class="hidden md:block col-span-2 md:col-span-4 font-light {% if page.image %} pt-4 pr-2 pb-2 {% endif %}"
   >
-    <div class="md:hidden col-span-2 font-light">
-      <span class="italic font-serif">{{ content }}</span>
-      {{ page.author }}
-    </div>
-    {% if page.image %}
-    <div class="h-0 {{ page.image-aspect }}">
-      <img
-        class="object-cover rounded-lg shadow-md"
-        src="/assets/img/{{ page.image }}"
-        alt=""
-      />
-    </div>
-    {% endif %}
-    <div class="hidden md:block col-span-2 font-light">
-      <span class="italic font-serif">{{ content }}</span>
-      {{ page.author }}
-    </div>
+    <span class="italic font-serif">{{ content }}</span>
+    {{ page.author }}
   </div>
 </div>
