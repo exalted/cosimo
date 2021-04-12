@@ -6,7 +6,10 @@
     <link href="/styles.css" rel="stylesheet" />
   </head>
 
-  <body class="h-screen bg-gray-50">
+  <body class="bg-gray-50">
     {{ content }}
+
+    <!-- prettier-ignore -->
+    {% comment %} {% include _debug.html %} {% endcomment %}
   </body>
 </html>

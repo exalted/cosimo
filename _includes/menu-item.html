@@ -1,0 +1,13 @@
+<!-- prettier-ignore -->
+{% if page.url == include.link_to %}
+{% assign active = true %}
+{% else %}
+{% assign active = false %}
+{% endif %}
+
+<a
+  class="p-5 py-3 uppercase text-lg text-gray-500 font-medium rounded-lg {% if active %} bg-gray-200 {% else %} hover:ring hover:ring-gray-100 {% endif %}"
+  href="{{ include.link_to }}"
+>
+  {{ include.title }}
+</a>

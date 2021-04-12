@@ -1,24 +1,45 @@
-<header>
+<header class="fixed top-0 w-full z-50 bg-white shadow-2xl">
   <div
     class="hidden md:block h-12 bg-gradient-to-b from-green-500 to-green-600"
   >
-    <!-- Address & email go here -->
+    Address & email go here, for non-mobile sizes
   </div>
   <nav
-    class="2xl:container mx-auto h-24 md:h-[9.5rem] pt-4 pl-2 md:pt-2 md:pl-4"
+    class="flex flex-col md:flex-row 2xl:container mx-auto h-24 md:h-[9.5rem] pt-4 md:pt-3"
   >
     <img
-      class="w-16 h-16 md:w-32 md:h-32 rounded-full"
+      class="w-16 h-16 md:w-32 md:h-32 rounded-full ml-2 md:ml-4"
       src="/assets/img/logo.jpeg"
       alt=""
     />
-    <!-- Mobile menu button -->
-    <div class="hidden md:block">
-      <!-- Normal menu -->
+    <!-- menu button goes here, for mobile size -->
+    <div class="hidden md:flex flex-grow justify-center items-center">
+      <!-- Menu content for non-mobile sizes goes here -->
+      <ol class="flex space-x-6">
+        <!-- prettier-ignore -->
+        {% assign menu_items = site.pages
+          | where_exp:"page", "page.menu_order > 0"
+          | sort: "menu_order"
+        %}
+        {% for menu_item in menu_items %}
+        <li>
+          <!-- prettier-ignore -->
+          {% include menu-item.html
+            title=menu_item.title
+            link_to=menu_item.url
+          %}
+        </li>
+        {% endfor %}
+      </ol>
     </div>
-    <div class="md:hidden">
-      <!-- Mobile menu -->
-      <!-- Address & email go here -->
+    <div class="md:hidden" style="display: none">
+      <!-- Menu content for mobile size goes here -->
+      <ol>
+        <li>Foo</li>
+        <li>Bar</li>
+        <li>Baz</li>
+      </ol>
+      Address & email go here, for mobile size
     </div>
   </nav>
 </header>
