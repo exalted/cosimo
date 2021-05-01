@@ -1,5 +1,5 @@
 ---
-layout: "home-section"
+layout: "page-section"
 title: "Trattamento"
 image: "trattamento.jpeg"
 quote: "lacan"

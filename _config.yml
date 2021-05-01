@@ -24,3 +24,14 @@ collections:
       - quando-chiedere-aiuto.md
       - sintomo.md
       - trattamento.md
+  aree-di-intervento_sections:
+    order:
+      - disturbi-di-ansia.md
+      - disturbi-dell-umore.md
+      - disturbi-alimentari.md
+      - disturbi-di-personalita.md
+      - disturbi-somotoformi.md
+      - dipendenze-patologiche.md
+      - disagi-dell-infanzia-e-dell-adolescenza.md
+      - problemi-di-relazione.md
+      - disfunzioni-della-sfera-sessuale.md

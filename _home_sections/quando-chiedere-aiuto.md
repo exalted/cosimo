@@ -1,5 +1,5 @@
 ---
-layout: "home-section"
+layout: "page-section"
 title: "Quando Chiedere Aiuto"
 image: "quando-chiedere-aiuto.jpeg"
 ---

@@ -2,7 +2,7 @@
 {% assign path = "/quotes/" | append: page.quote %}
 {% assign quote = site.quotes | find:"id", path %}
 
-<div class="{{ page.bg-color }} py-12 md:pt-28 md:pb-14">
+<div class="{{ page.bg-color }} py-12 md:py-28">
   <div
     class="2xl:container mx-auto px-4 md:grid md:grid-cols-3 md:gap-4 space-y-3 md:space-y-0"
   >
@@ -27,7 +27,7 @@
       class="h-0 aspect-w-16 aspect-h-9 -mx-4 md:mx-0 {% if page.alternative-layout %} md:col-start-1 md:row-start-1 {% endif %}"
     >
       <img
-        class="object-cover {{ page.image-position }} md:rounded-lg md:shadow-lg md:mt-14"
+        class="object-cover {{ page.image-position }} md:rounded-lg md:shadow-lg {% if page.alternative-layout %} md:mt-10 {% else %} md:mt-4 {% endif %}"
         src="/assets/img/{{ page.image }}"
         alt=""
       />
@@ -38,6 +38,8 @@
       {{ content }}
     </div>
 
+    {% if quote %}
     <div class="md:col-span-3 pt-8 md:pt-16">{{ quote.output }}</div>
+    {% endif %}
   </div>
 </div>

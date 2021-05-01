@@ -1,5 +1,5 @@
 ---
-layout: "home-section"
+layout: "page-section"
 alternative-layout: true
 bg-color: "bg-gray-200"
 title: "Il Sintomo"
