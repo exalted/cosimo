@@ -1,9 +1,15 @@
+{% comment %} spacer div, because the header is fixed {% endcomment %}
+<div class="mt-24 md:mt-[9.5rem]"></div>
+
 <header class="fixed top-0 w-full z-50 bg-white shadow-2xl">
+  {% comment %}
+  <!-- TODO: when 👇 enabled back, switch "spacer div" above from `md:mt-[9.5rem]` to `md:mt-[12.5rem]` -->
   <div
     class="hidden md:block h-12 bg-gradient-to-b from-green-500 to-green-600"
   >
     Address & email go here, for non-mobile sizes
   </div>
+  {% endcomment %}
   <nav
     class="flex flex-col md:flex-row 2xl:container mx-auto h-24 md:h-[9.5rem] pt-4 md:pt-3"
   >
@@ -12,18 +18,18 @@
       src="/assets/img/logo.jpeg"
       alt=""
     />
-    <!-- menu button goes here, for mobile size -->
+    {% comment %} menu button goes here, for mobile size {% endcomment %}
     <div class="hidden md:flex flex-grow justify-center items-center">
-      <!-- Menu content for non-mobile sizes goes here -->
+      {% comment %} Menu content for non-mobile sizes goes here {% endcomment %}
       <ol class="flex space-x-6">
-        <!-- prettier-ignore -->
+        {% comment %}<!-- prettier-ignore -->{% endcomment %}
         {% assign menu_items = site.pages
           | where_exp:"page", "page.menu_order > 0"
           | sort: "menu_order"
         %}
         {% for menu_item in menu_items %}
         <li>
-          <!-- prettier-ignore -->
+          {% comment %}<!-- prettier-ignore -->{% endcomment %}
           {% include menu-item.html
             title=menu_item.title
             link_to=menu_item.url
@@ -33,13 +39,13 @@
       </ol>
     </div>
     <div class="md:hidden" style="display: none">
-      <!-- Menu content for mobile size goes here -->
+      {% comment %} Menu content for mobile size goes here {% endcomment %}
       <ol>
         <li>Foo</li>
         <li>Bar</li>
         <li>Baz</li>
       </ol>
-      Address & email go here, for mobile size
+      {% comment %} Address & email go here, for mobile size {% endcomment %}
     </div>
   </nav>
 </header>

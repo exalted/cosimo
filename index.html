@@ -3,25 +3,16 @@ title: "Home"
 menu_order: 1
 ---
 
-<!-- <header> -->
-{% include header.html %}
-<!-- </header> -->
-
-<div class="md:hidden h-0 aspect-w-16 aspect-h-9 mt-24">
+<div class="md:hidden h-0 aspect-w-16 aspect-h-9">
   <img class="" src="/assets/img/cover-image.jpeg" alt="" />
 </div>
 <img
-  class="hidden md:block object-cover object-left-bottom w-full max-h-[50%] mt-[12.5rem]"
+  class="hidden md:block object-cover object-left-bottom w-full max-h-[50%]"
   src="/assets/img/cover-image.jpeg"
   alt=""
 />
 
+{% comment %}<!-- prettier-ignore -->{% endcomment %}
 {% for section in site.home_sections %}
-<!-- <{{ section.path }}> -->
 {{ section.output }}
-<!-- </{{ section.path }}> -->
 {% endfor %}
-
-<!-- <footer> -->
-{% include footer.html %}
-<!-- </footer> -->

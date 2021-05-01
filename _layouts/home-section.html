@@ -1,4 +1,4 @@
-<!-- prettier-ignore -->
+{% comment %}<!-- prettier-ignore -->{% endcomment %}
 {% assign path = "/quotes/" | append: page.quote %}
 {% assign quote = site.quotes | find:"id", path %}
 
@@ -38,10 +38,6 @@
       {{ content }}
     </div>
 
-    <div class="md:col-span-3 pt-8 md:pt-16">
-      <!-- <{{ quote.path }}> -->
-      {{ quote.output }}
-      <!-- </{{ quote.path }}> -->
-    </div>
+    <div class="md:col-span-3 pt-8 md:pt-16">{{ quote.output }}</div>
   </div>
 </div>
