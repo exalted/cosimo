@@ -3,3 +3,60 @@ title: "Chi Sono"
 menu_order: 3
 permalink: "/chi-sono"
 ---
+
+{% capture content %}
+<p>
+  Nel 2012 mi sono laureato con lode in “Psicologia Clinica e di Comunità”
+  all’Alma Mater di Bologna, con una tesi sperimentale dal titolo “Studio pilota
+  sull’efficacia di un protocollo di arte- terapia in età evolutiva”.
+</p>
+
+<p>
+  Regolarmente iscritto all’Ordine degli Psicologi dell’Emilia Romagna, ho
+  accumulato esperienza sia in ambito psichiatrico, presso comunità residenziali
+  o centri diurni per adulti, adolescenti e bambini, sia nel settore scolastico,
+  avendo inoltre approfondito l’area dei disturbi dell’apprendimento (DSA) e da
+  deficit di attenzione e iperattività (ADHD).
+</p>
+
+<p>
+  Ho anche collaborato per 3 anni con il Consultorio Familiare, Ausl della
+  Romagna. Dal 2015 svolgo la mia attività di psicologo presso uno studio
+  privato sito in Cesena. Attualmente sono specializzando, prossimo al diploma,
+  presso la scuola di specializzazione quadriennale in psicoterapia ad
+  orientamento psicoanalitico “Istituto Freudiano” di Roma.
+</p>
+
+<p>
+  Partecipo periodicamente (anche in qualità di relatore) a seminari teorici e
+  discussioni su casi clinici o temi d’attualità, mantenendo un aggiornamento
+  costante. A sostegno dell’affidabilità del professionista, io stesso sono
+  sottoposto a una psicoanalisi personale e a sistematiche supervisioni, come
+  auspicato da Freud e Lacan, proprio per garantire un ascolto libero da
+  preconcetti e la capacità di intervenire adeguatamente.
+</p>
+{% endcapture %}
+
+<div class="pb-12 md:py-28">
+  <div class="2xl:container mx-auto px-4 md:grid md:grid-cols-3 md:gap-4">
+    <div
+      class="hidden md:block md:col-span-2 max-w-prose text-xl font-light space-y-6 leading-relaxed"
+    >
+      {{ content }}
+    </div>
+    <div
+      class="h-0 aspect-w-1 aspect-h-1 md:aspect-w-3 md:aspect-h-4 -mx-4 md:mx-0"
+    >
+      <img
+        class="object-cover object-top md:rounded-lg md:shadow-lg"
+        src="/assets/img/chi-sono.jpeg"
+        alt=""
+      />
+    </div>
+    <div
+      class="md:hidden max-w-prose text-lg font-light space-y-4 pt-6 leading-relaxed"
+    >
+      {{ content }}
+    </div>
+  </div>
+</div>
