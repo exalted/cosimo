@@ -11,16 +11,33 @@
   </div>
   {% endcomment %}
   <nav
-    class="flex flex-col md:flex-row 2xl:container mx-auto h-24 md:h-[9.5rem] pt-4 md:pt-3"
+    class="
+      flex flex-col
+      md:flex-row
+      2xl:container
+      mx-auto
+      h-24
+      md:h-[9.5rem]
+      pt-4
+      md:pt-3
+    "
   >
-    <div class="flex flex-row">
+    <div class="flex flex-row space-x-3 mx-2">
       <img
-        class="w-16 h-16 md:w-32 md:h-32 rounded-full ml-2 md:ml-4"
+        class="w-16 h-16 md:w-32 md:h-32 rounded-full"
         src="/assets/img/logo.jpeg"
         alt=""
       />
       <div
-        class="flex flex-col justify-center ml-3 md:ml-6 -mt-1 md:-mt-4 space-y-1"
+        class="
+          flex flex-col flex-grow
+          justify-center
+          ml-3
+          md:ml-6
+          -mt-1
+          md:-mt-4
+          space-y-1
+        "
       >
         <h1 class="hidden md:block text-xl font-extrabold">
           Dott. Cosimo Giuseppe Comparini
@@ -31,8 +48,23 @@
         </h1>
         <p class="text-sm md:text-lg text-gray-600">Psicologo · Cesena</p>
       </div>
+      <button id="mobile-menu-toggle" type="button" class="md:hidden pr-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
     </div>
-    {% comment %} menu button goes here, for mobile size {% endcomment %}
     <div class="hidden md:flex flex-grow justify-center items-center">
       {% comment %} Menu content for non-mobile sizes goes here {% endcomment %}
       <ol class="flex space-x-6">
@@ -52,14 +84,23 @@
         {% endfor %}
       </ol>
     </div>
-    <div class="md:hidden" style="display: none">
+    <div id="mobile-menu" class="md:hidden" style="display: none">
       {% comment %} Menu content for mobile size goes here {% endcomment %}
-      <ol>
-        <li>Foo</li>
-        <li>Bar</li>
-        <li>Baz</li>
-      </ol>
-      {% comment %} Address & email go here, for mobile size {% endcomment %}
+      TODO: Mobile menu {% comment %} Address & email go here, for mobile size
+      {% endcomment %}
     </div>
   </nav>
 </header>
+
+<script>
+  const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  mobileMenuToggle.addEventListener("click", function toggleMobileMenu(event) {
+    if (mobileMenu.style.display === "none") {
+      mobileMenu.style.display = "block";
+    } else {
+      mobileMenu.style.display = "none";
+    }
+  });
+</script>
