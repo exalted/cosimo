@@ -1,5 +1,7 @@
 ---
 layout: "page-section"
+alternative-layout: true
+bg-color: "bg-gray-200"
 title: "Quando Chiedere Aiuto"
 image: "quando-chiedere-aiuto.jpeg"
 quote: "lacan"
