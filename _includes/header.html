@@ -68,14 +68,14 @@
     <div class="hidden md:flex flex-grow justify-center items-center">
       {% comment %} Menu content for non-mobile sizes goes here {% endcomment %}
       <ol class="flex space-x-6">
-        {% comment %}<!-- prettier-ignore -->{% endcomment %}
+        <!-- prettier-ignore -->
         {% assign menu_items = site.pages
           | where_exp:"page", "page.menu_order > 0"
           | sort: "menu_order"
         %}
         {% for menu_item in menu_items %}
         <li>
-          {% comment %}<!-- prettier-ignore -->{% endcomment %}
+          <!-- prettier-ignore -->
           {% include menu-item.html
             title=menu_item.title
             link_to=menu_item.url
