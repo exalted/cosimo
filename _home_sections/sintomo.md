@@ -1,5 +1,7 @@
 ---
 layout: "page-section"
+alternative-layout: true
+bg-color: "bg-gray-200"
 title: "Il Sintomo"
 image: "sintomo.jpeg"
 quote: "freud"
