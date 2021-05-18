@@ -18,11 +18,12 @@ jobs:
           set -x
           # ls -A
           npm install
+          git clean -ndx
           # bundle install
           # ls -A
-          git status --short
-          git branch --verbose --verbose
-          git diff
+          # git status --short
+          # git branch --verbose --verbose
+          # git diff
           # git checkout --orphan gh-pages
           # git branch --verbose --verbose
           # git status --short
