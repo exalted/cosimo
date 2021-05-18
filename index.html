@@ -7,47 +7,49 @@ menu_order: 1
   <div class="h-0 aspect-w-16 aspect-h-9">
     <img class="" src="/assets/img/cover-image.jpeg" alt="" />
   </div>
-  <h1
+  {% comment %} The div below is to put a blur effect on top of the cover image
+  {% endcomment %}
+  <div
     class="
       absolute
       top-0
       left-0
-      text-3xl
-      font-bold
-      text-white
       backdrop-filter backdrop-blur-[2px]
       w-full
       h-full
-      pl-4
-      pt-32
     "
-  >
-    Studio di Psicologia<br />
-    a Cesena
+  ></div>
+  <h1 class="absolute bottom-12 left-4 text-3xl text-white">
+    <span class="font-extralight">Studio di Psicologia</span><br />
+    <span class="font-normal">a Cesena</span>
   </h1>
 </div>
 <div class="hidden md:block relative">
   <img
-    class="object-cover object-left-bottom w-full max-h-[50%]"
+    class="object-cover object-left-bottom w-full"
     src="/assets/img/cover-image.jpeg"
     alt=""
   />
+  {% comment %} The div below is to put a blur effect on top of the cover image
+  {% endcomment %}
+  <div
+    class="absolute top-0 left-0 backdrop-filter backdrop-blur-sm w-full h-full"
+  ></div>
   <h1
     class="
       absolute
-      top-0
-      left-0
-      text-6xl
-      font-bold
-      text-white
-      backdrop-filter backdrop-blur-sm
-      w-full
-      h-full
-      pl-8
-      pt-[36rem]
+      md:bottom-12
+      lg:bottom-20
+      xl:bottom-32
+      2xl:bottom-40
+      left-24
+      text-6xl text-white
     "
   >
-    Studio di Psicologia, a Cesena
+    <span class="font-extralight">Studio di Psicologia</span><br /><span
+      class="font-semibold"
+      >a Cesena</span
+    >
   </h1>
 </div>
 
