@@ -1,6 +1,6 @@
 ---
 layout: "quote"
-author: "S.Freud"
+author: "S. Freud"
 bg-color: "bg-transparent md:bg-gray-50"
 image: "freud.jpeg"
 ---

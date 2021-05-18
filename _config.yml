@@ -27,6 +27,7 @@ collections:
   aree-di-intervento_sections:
     order:
       - disturbi-di-ansia.md
+      - disturbi-ossessivo-compulsivi.md
       - disturbi-dell-umore.md
       - disturbi-alimentari.md
       - disturbi-di-personalita.md
