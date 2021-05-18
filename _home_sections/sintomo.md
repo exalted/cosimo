@@ -4,7 +4,6 @@ alternative-layout: true
 bg-color: "bg-gray-200"
 title: "Il Sintomo"
 image: "sintomo.jpeg"
-image-position: "object-bottom"
 quote: "freud"
 ---
 
