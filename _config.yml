@@ -1,3 +1,5 @@
+destination: ./docs
+
 defaults:
   -
     # default layout for all pages
