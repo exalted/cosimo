@@ -15,7 +15,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Run bunch of commands
         env:
-          FOO: ${{ toJson(pusher) }}
+          FOO: ${{ toJson(github.pusher) }}
         run: |
           set -x
           echo "$FOO"
