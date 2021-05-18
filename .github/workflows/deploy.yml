@@ -6,6 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          echo ciao
-          echo bau
+      - name: Deploy
+        run: |
+          ls -A
+          npm install
+          bundle install
+          ls -A
+          git checkout --orphan gh-pages
+          git branch --verbose --verbose
+          git status --short
