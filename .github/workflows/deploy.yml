@@ -16,20 +16,10 @@ jobs:
       - name: Run bunch of commands
         run: |
           set -x
-          # ls -A
           npm install
-          git clean -ndx
-          # bundle install
-          # ls -A
-          # git status --short
-          # git branch --verbose --verbose
-          # git diff
-          # git checkout --orphan gh-pages
-          # git branch --verbose --verbose
-          # git status --short
           JEKYLL_ENV=production bundle exec jekyll build
-          git clean -ndx
-          # git status --short
-          # tree docs/
           NODE_ENV=production npx postcss styles.css --output docs/styles.css
-          tree docs/
+          git checkout --orphan gh-pages
+          git rm -r --cached -- .
+          git add --force docs/
+          git status --short
