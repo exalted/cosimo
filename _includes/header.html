@@ -1,3 +1,9 @@
+<!-- prettier-ignore -->
+{% assign menu_items = site.pages
+  | where_exp:"page", "page.menu_order > 0"
+  | sort: "menu_order"
+%}
+
 {% comment %} spacer div, because the header is fixed {% endcomment %}
 <div class="mt-24 md:mt-[9.5rem]"></div>
 
@@ -16,28 +22,23 @@
       md:flex-row
       2xl:container
       mx-auto
-      h-24
       md:h-[9.5rem]
-      pt-4
+      px-2
+      py-4
       md:pt-3
+      space-x-0
+      md:space-x-3
+      space-y-3
     "
   >
-    <div class="flex flex-row space-x-3 mx-2">
+    <div class="flex flex-row space-x-3">
       <img
         class="w-16 h-16 md:w-32 md:h-32 rounded-full"
         src="/assets/img/logo.jpeg"
         alt=""
       />
       <div
-        class="
-          flex flex-col flex-grow
-          justify-center
-          ml-3
-          md:ml-6
-          -mt-1
-          md:-mt-4
-          space-y-1
-        "
+        class="flex flex-col flex-grow justify-center -mt-1 md:-mt-4 space-y-1"
       >
         <h1 class="hidden md:block text-xl font-extrabold">
           Dott. Cosimo Giuseppe Comparini
@@ -48,7 +49,11 @@
         </h1>
         <p class="text-sm md:text-lg text-gray-600">Psicologo · Cesena</p>
       </div>
-      <button id="mobile-menu-toggle" type="button" class="md:hidden pr-2">
+      <button
+        id="mobile-menu-show"
+        type="button"
+        class="md:hidden !mr-2 text-green-600"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-8 w-8"
@@ -59,8 +64,29 @@
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
-            stroke-width="2"
+            stroke-width="3"
             d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+      <button
+        id="mobile-menu-hide"
+        type="button"
+        class="md:hidden !mr-2 text-green-600"
+        style="display: none"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+            d="M6 18L18 6M6 6l12 12"
           />
         </svg>
       </button>
@@ -68,11 +94,6 @@
     <div class="hidden md:flex flex-grow justify-center items-center">
       {% comment %} Menu content for non-mobile sizes goes here {% endcomment %}
       <ol class="flex space-x-6">
-        <!-- prettier-ignore -->
-        {% assign menu_items = site.pages
-          | where_exp:"page", "page.menu_order > 0"
-          | sort: "menu_order"
-        %}
         {% for menu_item in menu_items %}
         <li>
           <!-- prettier-ignore -->
@@ -86,21 +107,35 @@
     </div>
     <div id="mobile-menu" class="md:hidden" style="display: none">
       {% comment %} Menu content for mobile size goes here {% endcomment %}
-      TODO: Mobile menu {% comment %} Address & email go here, for mobile size
-      {% endcomment %}
+      <ol class="flex flex-col space-y-3">
+        {% for menu_item in menu_items %}
+        <li class="w-full">
+          <!-- prettier-ignore -->
+          {% include menu-item.html
+            title=menu_item.title
+            link_to=menu_item.url
+          %}
+        </li>
+        {% endfor %}
+      </ol>
+      {% comment %} Address & email go here, for mobile size {% endcomment %}
     </div>
   </nav>
 </header>
 
 <script>
-  const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+  const mobileMenuShow = document.getElementById("mobile-menu-show");
+  const mobileMenuHide = document.getElementById("mobile-menu-hide");
   const mobileMenu = document.getElementById("mobile-menu");
 
-  mobileMenuToggle.addEventListener("click", function toggleMobileMenu(event) {
-    if (mobileMenu.style.display === "none") {
-      mobileMenu.style.display = "block";
-    } else {
-      mobileMenu.style.display = "none";
-    }
+  mobileMenuShow.addEventListener("click", function showMobileMenu(event) {
+    mobileMenu.style.display = "block";
+    mobileMenuHide.style.display = "block";
+    mobileMenuShow.style.display = "none";
+  });
+  mobileMenuHide.addEventListener("click", function hideMobileMenu(event) {
+    mobileMenu.style.display = "none";
+    mobileMenuHide.style.display = "none";
+    mobileMenuShow.style.display = "block";
   });
 </script>
