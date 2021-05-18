@@ -20,6 +20,7 @@ jobs:
           JEKYLL_ENV=production bundle exec jekyll build
           NODE_ENV=production npx postcss styles.css --output docs/styles.css
           git checkout --orphan gh-pages
+          git add .bundle/config  # because following `git rm --cached` would fail otherwise
           git rm -r --cached -- .
           git add --force docs/
           git status --short
