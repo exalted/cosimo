@@ -24,3 +24,5 @@ jobs:
           git rm -r --cached -- .
           git add --force docs/
           git status --short
+          git commit --message="Publishing $(git rev-parse --short main) on $(date)"
+          git push --force origin gh-pages
