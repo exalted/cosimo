@@ -2,7 +2,7 @@
 layout: "page-section"
 alternative-layout: true
 bg-color: "bg-gray-200"
-title: "Disagi Dell’Infanzia e Dell’Adolescenza"
+title: "Disagi dell’Infanzia e dell’Adolescenza"
 image: "disagi-dell-infanzia-e-dell-adolescenza.jpeg"
 ---
 

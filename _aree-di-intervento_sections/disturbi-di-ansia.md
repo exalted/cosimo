@@ -2,7 +2,7 @@
 layout: "page-section"
 alternative-layout: true
 bg-color: "bg-gray-200"
-title: "Disturbi D'Ansia"
+title: "Disturbi d'Ansia"
 image: "disturbi-di-ansia.jpeg"
 ---
 

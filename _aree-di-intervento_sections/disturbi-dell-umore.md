@@ -1,6 +1,6 @@
 ---
 layout: "page-section"
-title: "Disturbi Dell’Umore"
+title: "Disturbi dell’Umore"
 image: "disturbi-dell-umore.jpeg"
 ---
 
