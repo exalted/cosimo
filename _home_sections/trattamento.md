@@ -2,6 +2,8 @@
 layout: "page-section"
 title: "Introduzione al Trattamento"
 image: "trattamento.jpeg"
+image-aspect-ratio: "h-0 aspect-w-16 aspect-h-9"
+image-style: "object-cover"
 ---
 
 Come afferma Lacan, nasciamo immersi in un “bagno di linguaggio”. Cosa significa? Che fin dall’esordio nella vita le parole degli altri (in primis le figure genitoriali o di accudimento) sono pregne di aspettative e speranze nei confronti del figlio, ne plasmano quindi in qualche modo la storia e il destino, il posto nel mondo, a discapito dell’avvenire del soggetto e del rapporto col proprio singolare desiderio. Un percorso guidato psicoanaliticamente, secondo le indicazioni di Freud e Lacan, mira a confrontare il soggetto con questa parte intima del suo essere, <strong class="font-bold">che agisce fuori dal controllo cosciente</strong> e produce ripetitivamente le medesime dinamiche, caratterizzate da un senso di ineluttabilità.

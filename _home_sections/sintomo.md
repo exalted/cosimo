@@ -4,6 +4,8 @@ alternative-layout: true
 bg-color: "bg-gray-200"
 title: "Il Sintomo"
 image: "sintomo.jpeg"
+image-aspect-ratio: "h-0 aspect-w-16 aspect-h-9"
+image-style: "object-cover object-bottom"
 quote: "freud"
 ---
 
