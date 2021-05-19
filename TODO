@@ -5,3 +5,4 @@
 - favicon
 - HTTPS (besides DNSimple, check also "force HTTPS" settings in https://github.com/exalted/cosimocomparini-psicologo.it/settings/pages)
   - www.* doesn't work?
+- Google lighthouse (ie performance improvements)
