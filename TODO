@@ -6,3 +6,4 @@
 - HTTPS (besides DNSimple, check also "force HTTPS" settings in https://github.com/exalted/cosimocomparini-psicologo.it/settings/pages)
   - www.* doesn't work?
 - Google lighthouse (ie performance improvements)
+- Fingerprint assets with some clever and custom md5sum + find&replace, so that they can update on users' browsers as quick as possible
