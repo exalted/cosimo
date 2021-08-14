@@ -38,3 +38,11 @@ collections:
       - disagi-dell-infanzia-e-dell-adolescenza.md
       - problemi-di-relazione.md
       - disfunzioni-della-sfera-sessuale.md
+
+exclude:
+  - '/*.config.js'
+  - /assetchecksum.sh
+  - /CNAME
+  - /package*.json
+  - /script/
+  - /TODO

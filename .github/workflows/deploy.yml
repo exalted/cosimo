@@ -21,6 +21,7 @@ jobs:
 
           JEKYLL_ENV=production bundle exec jekyll build
           NODE_ENV=production npx postcss styles.css --output docs/styles.css
+          ./assetchecksum.sh
 
           # Ref.: https://lannonbr.com/blog/2019-12-09-git-commit-in-actions
           git config user.name "GitHub Actions Bot"
