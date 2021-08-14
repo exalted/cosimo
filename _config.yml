@@ -42,7 +42,6 @@ collections:
 exclude:
   - '/*.config.js'
   - /assetchecksum.sh
-  - /CNAME
   - /package*.json
   - /script/
   - /TODO
