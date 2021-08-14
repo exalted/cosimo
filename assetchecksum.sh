@@ -30,6 +30,10 @@ do
   for content_path in $contents
   do
     # echo "$content_path"
-    sed -i'' "s/$asset_filename/$asset_filename?checksum=$asset_checksum/g" $content_path
+
+    # NOTE: `sed -i''` VS `sed -i ''`.
+    # Former is for Linux (ie github actions), whilst latter is for macOS… 😞
+    sed -i'' "s/$asset_filename/$asset_filename?checksum=$asset_checksum/g" $content_path 2> /dev/null \
+    || sed -i '' "s/$asset_filename/$asset_filename?checksum=$asset_checksum/g" $content_path
   done
 done
