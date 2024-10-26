@@ -1,4 +1,0 @@
-- SEO
-  - Sitemap
-- Google lighthouse (ie performance improvements)
-- Fingerprint assets with some clever and custom md5sum + find&replace, so that they can update on users' browsers as quick as possible
