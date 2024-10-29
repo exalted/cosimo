@@ -20,7 +20,7 @@ jobs:
         run: |
           set -x
 
-          npm install
+          npm ci
 
           JEKYLL_ENV=production bundle exec jekyll build
           NODE_ENV=production npx postcss styles.css --output docs/styles.css
