@@ -6,7 +6,6 @@
   <div
     class="2xl:container mx-auto px-4 md:grid md:grid-cols-3 md:gap-4 space-y-3 md:space-y-0"
   >
-    <!-- prettier-ignore -->
     <div
       class="md:col-span-2 {% if page.alternative-layout %} md:col-start-2 md:ml-36 {% endif %}"
     >
@@ -24,11 +23,9 @@
         {{ content }}
       </div>
     </div>
-    <!-- prettier-ignore -->
     <div
-    class="{{ page.image-aspect-ratio }} -mx-4 md:mx-0 {% if page.alternative-layout %} md:col-start-1 md:row-start-1 {% endif %}"
+      class="{{ page.image-aspect-ratio }} -mx-4 md:mx-0 {% if page.alternative-layout %} md:col-start-1 md:row-start-1 {% endif %}"
     >
-    <!-- prettier-ignore -->
       <img
         class="{{ page.image-style }} mr-auto md:mt-6 md:rounded-xl md:shadow-lg border-t-4 border-b-4 md:border-4 border-gray-600"
         src="/assets/img/{{ page.image }}"
