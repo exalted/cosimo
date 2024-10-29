@@ -1,7 +1,7 @@
 {
-    "name": "Psicologo Cesena",
-    "short_name": "Psicologo Cesena",
-    "description": "Dott. Cosimo Giuseppe Comparini - Psicologo, a Cesena",
+    "name": "Psicologo",
+    "short_name": "Psicologo",
+    "description": "Dott. Cosimo Giuseppe Comparini · Psicologo a Cesena e Gambettola",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

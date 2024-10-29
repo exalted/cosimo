@@ -1,19 +1,12 @@
-<!-- prettier-ignore -->
-{% if page.url == include.link_to %}
-{% assign active = true %}
-{% else %}
-{% assign active = false %}
-{% endif %}
-
 <a
-  class="hidden md:block p-5 py-3 uppercase text-lg font-medium rounded-lg {% if active %} bg-green-500 text-white {% else %} text-gray-400 hover:ring hover:ring-green-400 {% endif %}"
+  class="hidden md:block p-5 py-3 uppercase text-lg font-medium rounded-lg {% if include.active %} bg-green-500 text-white {% else %} text-gray-400 hover:ring hover:ring-green-400 {% endif %}"
   href="{{ include.link_to }}"
 >
   {{ include.title }}
 </a>
 
 <a
-  class="block md:hidden text-center p-5 py-3 uppercase font-medium rounded-md ring {% if active %} ring-green-500 bg-green-500 text-white {% else %} text-gray-400 ring ring-gray-100 {% endif %}"
+  class="block md:hidden text-center p-5 py-3 uppercase font-medium rounded-md ring {% if include.active %} ring-green-500 bg-green-500 text-white {% else %} text-gray-400 ring ring-gray-100 {% endif %}"
   href="{{ include.link_to }}"
 >
   {{ include.title }}
