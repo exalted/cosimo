@@ -1,6 +1,6 @@
-<pre id="jekyll-debug-site" class="whitespace-pre bg-gray-300">
-🟢 site:
-{{ site | inspect }}
+<pre id="jekyll-debug-paginator" class="whitespace-pre bg-gray-300">
+🟢 paginator:
+{{ paginator | inspect }}
 </pre>
 
 <pre id="jekyll-debug-page" class="whitespace-pre">
@@ -21,13 +21,14 @@
 {{ content | inspect }}
 </pre>
 
-<pre id="jekyll-debug-paginator" class="whitespace-pre bg-gray-300">
-🟢 paginator:
-{{ paginator | inspect }}
+<pre id="jekyll-debug-site" class="whitespace-pre bg-gray-300">
+🟢 site:
+{{ site | inspect }}
 </pre>
 
+<!-- prettier-ignore -->
 {% comment %}
-<!-- NOTE: The snippet below would work only if copy & paste'd inside an `_includes/*` file -->
+NOTE: The snippet below would work only if copy & paste'd inside an `_includes/*` file:
 <pre id="jekyll-debug-include" class="whitespace-pre">
 🟢 include:
 {{ include | inspect }}
