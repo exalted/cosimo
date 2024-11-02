@@ -1,5 +1,6 @@
 ---
 title: "Come Superare l’Ansia Sociale: Guida Pratica"
+image: "disturbi-di-ansia.jpeg"
 ---
 
 L’ansia sociale è una condizione comune che colpisce milioni di persone in tutto il mondo. Caratterizzata da una paura intensa e persistente delle situazioni sociali, può limitare significativamente la vita quotidiana e le relazioni interpersonali. In questa guida pratica, esploreremo strategie efficaci per superare l’ansia sociale e migliorare il proprio benessere emotivo.

@@ -16,18 +16,23 @@ menu_title: "Articoli"
       >
         {{ page.title }}
       </h1>
+      {% if page.image %}
       <div
         class="-mx-4 md:mx-0 {% if page.alternative-layout %} md:col-start-1 md:row-start-1 {% endif %}"
       >
         <img
           class="w-full md:w-5/6 mr-auto md:mt-6 md:rounded-xl md:shadow-lg border-t-4 border-b-4 md:border-4 border-gray-600"
-          src="/assets/img/disturbi-di-ansia.jpeg"
+          src="/assets/img/{{ page.image }}"
           alt=""
         />
       </div>
+      <!-- prettier-ignore -->
+      {% endif %}
       {{ content }}
     </div>
-    <div class="text-xl font-light space-y-6 leading-relaxed">
+    <div
+      class="text-xl font-light space-y-6 leading-relaxed mt-12 md:mt-0 text-center md:text-left"
+    >
       <h2
         class="text-center md:text-left text-2xl md:text-2xl font-bold text-gray-400"
       >
