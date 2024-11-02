@@ -4,10 +4,17 @@ defaults:
   -
     # default layout for all pages
     scope:
-      path: ""
+      path: "" # an empty string here means all files in the project
       type: "pages"
     values:
       layout: "default"
+  -
+    # default layout for all posts
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
 
 plugins:
   - jekyll-optional-front-matter # Markdown files to not require front matter
@@ -20,6 +27,8 @@ optional_front_matter:
 # (For example: `home_sections` uses `quotes`, therefore `quotes` is positioned
 # before `home_sections`.)
 collections:
+  posts:
+    permalink: /articoli/:title
   quotes:
   home_sections:
     order:

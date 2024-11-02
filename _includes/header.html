@@ -148,18 +148,15 @@
         {% for menu_item in menu_items %}
         <li>
           <!-- prettier-ignore -->
-          {% assign menu_title = menu_item.menu_title | default: menu_item.title %}
-          {% assign _reverse_page_url = page.url | split: "" | reverse | join: "" %}
-          {% assign _reverse_menu_active_when_page_url_equals_without_suffix = page.menu_active_when_page_url_equals_without_suffix[1] | split: "" | reverse | join: "" %}
-          {% assign _page_url_without_suffix = _reverse_page_url | remove_first: _reverse_menu_active_when_page_url_equals_without_suffix | split: "" | reverse | join: "" %}
-          {% if _page_url_without_suffix == menu_item.menu_active_when_page_url_equals_without_suffix[0] or page.url == menu_item.url %}
+          {% assign menu_title_for_page = page.menu_title | default: layout.menu_title | default: page.title %}
+          {% if page.url == menu_item.url or menu_title_for_page == menu_item.title %}
             {% assign menu_active = true %}
           {% else %}
             {% assign menu_active = false %}
           {% endif %}
           {% include menu-item.html
-            title=menu_title
-            link_to=menu_item.url
+            title=menu_item.title
+            url=menu_item.url
             active=menu_active
           %}
         </li>
@@ -172,18 +169,15 @@
         {% for menu_item in menu_items %}
         <li class="w-full">
           <!-- prettier-ignore -->
-          {% assign menu_title = menu_item.menu_title | default: menu_item.title %}
-          {% assign _reverse_page_url = page.url | split: "" | reverse | join: "" %}
-          {% assign _reverse_menu_active_when_page_url_equals_without_suffix = page.menu_active_when_page_url_equals_without_suffix[1] | split: "" | reverse | join: "" %}
-          {% assign _page_url_without_suffix = _reverse_page_url | remove_first: _reverse_menu_active_when_page_url_equals_without_suffix | split: "" | reverse | join: "" %}
-          {% if _page_url_without_suffix == menu_item.menu_active_when_page_url_equals_without_suffix[0] or page.url == menu_item.url %}
+          {% assign menu_title_for_page = page.menu_title | default: layout.menu_title | default: page.title %}
+          {% if page.url == menu_item.url or menu_title_for_page == menu_item.title %}
             {% assign menu_active = true %}
           {% else %}
             {% assign menu_active = false %}
           {% endif %}
           {% include menu-item.html
-            title=menu_title
-            link_to=menu_item.url
+            title=menu_item.title
+            url=menu_item.url
             active=menu_active
           %}
         </li>
