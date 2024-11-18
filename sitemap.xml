@@ -1,14 +1,24 @@
 ---
 layout: null
-search: exclude
 ---
+
+{% assign pages = site.html_pages | where_exp: "page", "page.sitemap != false" %}
+{% assign posts = site.posts %}
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    {% for page in site.html_pages %}
+    {% for page in pages %}
     <url>
         <loc>https://cosimocomparini-psicologo.it{{page.url}}</loc>
+        <lastmod>{{site.time | date: '%Y-%m-%d' }}</lastmod>
+    </url>
+    {% endfor %}
+
+    {% for post in posts %}
+    <url>
+        <loc>https://cosimocomparini-psicologo.it{{post.url}}</loc>
+        <lastmod>{{post.date | date: '%Y-%m-%d' }}</lastmod>
     </url>
     {% endfor %}
 
