@@ -53,3 +53,4 @@ exclude:
   - /assetchecksum.sh
   - /package*.json
   - /script/
+  - CNAME
