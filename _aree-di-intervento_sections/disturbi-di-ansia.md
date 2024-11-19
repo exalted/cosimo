@@ -3,7 +3,7 @@ layout: "page-section"
 alternative-layout: true
 bg-color: "bg-gray-200"
 title: "Disturbi d'Ansia"
-image: "disturbi-di-ansia.jpeg"
+image: "disturbi-di-ansia.jpg"
 image-style: "w-full md:w-5/6"
 ---
 

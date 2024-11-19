@@ -1,7 +1,7 @@
 ---
 layout: "page-section"
 title: "Quando Chiedere Aiuto"
-image: "quando-chiedere-aiuto.jpeg"
+image: "quando-chiedere-aiuto.jpg"
 quote: "lacan"
 image-aspect-ratio: "h-0 aspect-w-16 aspect-h-9"
 image-style: "object-cover"

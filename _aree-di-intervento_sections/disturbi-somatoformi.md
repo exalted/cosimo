@@ -1,7 +1,7 @@
 ---
 layout: "page-section"
 title: "Disturbi Somatoformi"
-image: "disturbi-somatoformi.jpeg"
+image: "disturbi-somatoformi.jpg"
 image-style: "w-full md:w-5/6"
 ---
 

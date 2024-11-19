@@ -1,7 +1,7 @@
 ---
 layout: "page-section"
 title: "Disagi dell’Infanzia e dell’Adolescenza"
-image: "disagi-dell-infanzia-e-dell-adolescenza.jpeg"
+image: "disagi-dell-infanzia-e-dell-adolescenza.jpg"
 image-style: "w-full md:w-4/6"
 ---
 

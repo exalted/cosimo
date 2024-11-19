@@ -3,7 +3,7 @@ layout: "page-section"
 alternative-layout: true
 bg-color: "bg-gray-200"
 title: "Problemi di Relazione"
-image: "problemi-di-relazione.jpeg"
+image: "problemi-di-relazione.jpg"
 image-style: "w-full md:w-4/6"
 ---
 

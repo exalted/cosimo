@@ -1,7 +1,7 @@
 ---
 layout: "page-section"
 title: "Introduzione al Trattamento"
-image: "trattamento.jpeg"
+image: "trattamento.jpg"
 image-aspect-ratio: "h-0 aspect-w-16 aspect-h-9"
 image-style: "object-cover"
 ---

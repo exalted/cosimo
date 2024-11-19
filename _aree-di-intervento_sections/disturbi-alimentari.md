@@ -1,7 +1,7 @@
 ---
 layout: "page-section"
 title: "Disturbi Alimentari"
-image: "disturbi-alimentari.jpeg"
+image: "disturbi-alimentari.jpg"
 image-style: "w-full md:w-4/6"
 ---
 

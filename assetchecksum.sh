@@ -4,7 +4,7 @@ cd docs/
 
 assets=$(find . \( \
     -iname '*.png' \
-    -o -iname '*.jpeg' \
+    -o -iname '*.jpg' \
     -o -iname '*.jpeg' \
     -o -iname '*.xml' \
     -o -iname '*.ico' \

@@ -3,7 +3,7 @@ layout: "page-section"
 alternative-layout: true
 bg-color: "bg-gray-200"
 title: "Disturbi dell’Umore"
-image: "disturbi-dell-umore.jpeg"
+image: "disturbi-dell-umore.jpg"
 image-style: "w-full md:w-4/6"
 ---
 

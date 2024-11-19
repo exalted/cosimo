@@ -3,7 +3,7 @@ layout: "page-section"
 alternative-layout: true
 bg-color: "bg-gray-200"
 title: "Dipendenze Patologiche"
-image: "dipendenze-patologiche.jpeg"
+image: "dipendenze-patologiche.jpg"
 image-style: "w-full md:w-4/6"
 ---
 

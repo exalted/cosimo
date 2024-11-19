@@ -3,7 +3,7 @@ layout: "page-section"
 alternative-layout: true
 bg-color: "bg-gray-200"
 title: "Disturbi di Personalità"
-image: "disturbi-di-personalita.jpeg"
+image: "disturbi-di-personalita.jpg"
 image-style: "w-full md:w-5/6"
 ---
 

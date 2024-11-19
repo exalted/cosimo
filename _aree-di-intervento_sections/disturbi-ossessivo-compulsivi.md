@@ -1,7 +1,7 @@
 ---
 layout: "page-section"
 title: "Disturbi Ossessivo-Compulsivi"
-image: "disturbi-ossessivo-compulsivi.jpeg"
+image: "disturbi-ossessivo-compulsivi.jpg"
 image-style: "w-full md:w-4/6"
 ---
 

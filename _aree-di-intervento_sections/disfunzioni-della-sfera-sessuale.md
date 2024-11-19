@@ -1,7 +1,7 @@
 ---
 layout: "page-section"
 title: "Disfunzioni della Sfera Sessuale"
-image: "disfunzioni-della-sfera-sessuale.jpeg"
+image: "disfunzioni-della-sfera-sessuale.jpg"
 image-style: "w-full md:w-5/6"
 ---
 
