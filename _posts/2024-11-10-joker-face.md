@@ -1,6 +1,7 @@
 ---
 title: "Joker Face"
 image: "posts/2024-11-10-joker-face.jpg"
+phantom_menu_id: articoli
 ---
 
 Il film “Joker, Folie a deux”, instancabilmente sobissato da critiche e rimproveri di
