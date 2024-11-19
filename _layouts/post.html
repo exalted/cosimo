@@ -13,11 +13,11 @@ menu_title: "Articoli"
       <hr
         class="border-4 border-green-500 mx-auto md:mx-0 w-16 md:w-20 mb-2 md:mb-4"
       />
-      <h1
+      <h3
         class="text-center md:text-left text-2xl md:text-4xl font-bold text-gray-600"
       >
         {{ page.title }}
-      </h1>
+      </h3>
       {% if page.image %}
       <div
         class="-mx-4 md:mx-0 {% if page.alternative-layout %} md:col-start-1 md:row-start-1 {% endif %}"
@@ -35,11 +35,11 @@ menu_title: "Articoli"
     <div
       class="text-xl font-light space-y-2 md:space-y-6 leading-relaxed text-center md:text-left order-1 md:order-2"
     >
-      <h2
+      <h3
         class="text-center md:text-left text-2xl md:text-2xl font-bold text-gray-400"
       >
         Tutti gli Articoli
-      </h2>
+      </h3>
       <ol>
         <!-- prettier-ignore -->
         {% for post in site.posts %}
