@@ -1,19 +1,19 @@
 <!-- prettier-ignore -->
 {% if page.image %}
-  {% assign class="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4 pl-2 md:pl-0 rounded-lg border-l-4 md:border-l-0 border-green-300 md:shadow-2xl md:w-1/2 mx-auto" %}
+  {% assign class="grid grid-cols-3 lg:grid-cols-5 gap-2 lg:gap-4 pl-2 lg:pl-0 rounded-lg border-l-4 lg:border-l-0 border-green-300 lg:shadow-2xl lg:w-1/2 mx-auto" %}
 {% else %}
-  {% assign class="p-2 md:p-4 rounded-lg border-l-4 border-green-300 md:shadow-2xl md:w-1/2 mx-auto" %}
+  {% assign class="p-2 lg:p-4 rounded-lg border-l-4 border-green-300 lg:shadow-2xl lg:w-1/2 mx-auto" %}
 {% endif %}
 
 <div class="{{ class }} {{ page.bg-color }}">
-  <div class="md:hidden col-span-2 font-light">
+  <div class="lg:hidden col-span-2 font-light">
     <span class="italic font-serif">{{ content }}</span>
     {{ page.author }}
   </div>
   {% if page.image %}
   <div class="h-0 aspect-w-3 aspect-h-4">
     <img
-      class="object-cover rounded-lg md:rounded-l-lg md:rounded-r-none shadow-md"
+      class="object-cover rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-md"
       src="/assets/img/{{ page.image }}"
       loading="lazy"
       alt="La foto di {{ page.author }}"
@@ -21,7 +21,7 @@
   </div>
   {% endif %}
   <div
-    class="hidden md:block col-span-2 md:col-span-4 font-light {% if page.image %} pt-4 pr-2 pb-2 {% endif %}"
+    class="hidden lg:block col-span-2 lg:col-span-4 font-light {% if page.image %} pt-4 pr-2 pb-2 {% endif %}"
   >
     <span class="italic font-serif">{{ content }}</span>
     {{ page.author }}

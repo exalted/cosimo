@@ -1,7 +1,7 @@
 ---
 layout: "quote"
 author: "S. Freud"
-bg-color: "bg-transparent md:bg-gray-50"
+bg-color: "bg-transparent lg:bg-gray-50"
 image: "freud.jpg"
 ---
 

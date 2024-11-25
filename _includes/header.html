@@ -5,11 +5,11 @@
 %}
 
 <!-- Spacer div, because the header is fixed -->
-<div class="mt-24 md:mt-40"></div>
+<div class="mt-24 lg:mt-40"></div>
 
 <header class="fixed w-full z-50 bg-white shadow-2xl">
   <div
-    class="hidden md:flex items-center h-12 bg-gradient-to-b from-gray-100 to-gray-200"
+    class="hidden lg:flex items-center h-12 bg-gradient-to-b from-gray-100 to-gray-200"
   >
     <div class="2xl:container mx-auto">
       <address class="flex justify-center space-x-8 not-italic text-gray-500">
@@ -79,24 +79,24 @@
     </div>
   </div>
   <nav
-    class="flex flex-col md:flex-row 2xl:container mx-auto px-2 py-4 space-x-0 md:space-x-3"
+    class="flex flex-col lg:flex-row 2xl:container mx-auto px-2 py-4 space-x-0 lg:space-x-3"
   >
     <div class="flex flex-row space-x-3">
       <img
-        class="w-16 h-16 md:w-20 md:h-20 rounded-full"
+        class="w-16 h-16 lg:w-20 lg:h-20 rounded-full"
         src="/assets/img/logo.jpg"
         alt="Logo del sito"
       />
       <div
-        class="flex flex-col flex-grow justify-center -mt-1 md:mt-0 space-y-1"
+        class="flex flex-col flex-grow justify-center -mt-1 lg:mt-0 space-y-1"
       >
-        <h1 class="text-sm md:text-lg text-gray-600 order-last">
+        <h1 class="text-sm lg:text-lg text-gray-600 order-last">
           Psicologo a Cesena e Gambettola
         </h1>
-        <h2 class="hidden md:block text-xl font-extrabold">
+        <h2 class="hidden lg:block text-xl font-extrabold">
           Dott. Cosimo Giuseppe Comparini
         </h2>
-        <h2 class="md:hidden font-bold leading-tight">
+        <h2 class="lg:hidden font-bold leading-tight">
           Dott.<br />
           Cosimo Giuseppe Comparini
         </h2>
@@ -104,7 +104,7 @@
       <button
         id="mobile-menu-show"
         type="button"
-        class="md:hidden !mr-2 text-green-600"
+        class="lg:hidden !mr-2 text-green-600"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +124,7 @@
       <button
         id="mobile-menu-hide"
         type="button"
-        class="md:hidden !mr-2 text-green-600"
+        class="lg:hidden !mr-2 text-green-600"
         style="display: none"
       >
         <svg
@@ -143,7 +143,7 @@
         </svg>
       </button>
     </div>
-    <div class="hidden md:flex flex-grow justify-center items-center">
+    <div class="hidden lg:flex flex-grow justify-center items-center">
       <ol class="flex space-x-1">
         <!-- prettier-ignore -->
         {% for menu_item in menu_items %}
@@ -166,7 +166,7 @@
         {% endfor %}
       </ol>
     </div>
-    <div id="mobile-menu" class="md:hidden" style="display: none">
+    <div id="mobile-menu" class="lg:hidden" style="display: none">
       <!-- Mobile menu -->
       <ol class="flex flex-col space-y-3">
         <!-- prettier-ignore -->

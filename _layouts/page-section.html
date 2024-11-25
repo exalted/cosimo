@@ -2,45 +2,45 @@
 {% assign path = "/quotes/" | append: page.quote %}
 {% assign quote = site.quotes | find:"id", path %}
 
-<div class="{{ page.bg-color }} py-12 md:py-28">
+<div class="{{ page.bg-color }} py-12 lg:py-28">
   <div
-    class="2xl:container mx-auto px-4 md:grid md:grid-cols-3 md:gap-4 space-y-3 md:space-y-0"
+    class="2xl:container mx-auto px-4 lg:grid lg:grid-cols-3 lg:gap-4 space-y-3 lg:space-y-0"
   >
     <div
-      class="md:col-span-2 {% if page.alternative-layout %} md:col-start-2 md:ml-36 {% endif %}"
+      class="lg:col-span-2 {% if page.alternative-layout %} lg:col-start-2 lg:ml-36 {% endif %}"
     >
       <hr
-        class="border-4 border-green-500 mx-auto md:mx-0 w-16 md:w-20 mb-2 md:mb-4"
+        class="border-4 border-green-500 mx-auto lg:mx-0 w-16 lg:w-20 mb-2 lg:mb-4"
       />
       <h3
-        class="text-center md:text-left text-2xl md:text-4xl font-bold text-gray-600 mb-8"
+        class="text-center lg:text-left text-2xl lg:text-4xl font-bold text-gray-600 mb-8"
       >
         {{ page.title }}
       </h3>
       <div
-        class="hidden md:block max-w-prose text-xl font-light space-y-6 leading-relaxed"
+        class="hidden lg:block max-w-prose text-xl font-light space-y-6 leading-relaxed"
       >
         {{ content }}
       </div>
     </div>
     <div
-      class="{{ page.image-aspect-ratio }} -mx-4 md:mx-0 {% if page.alternative-layout %} md:col-start-1 md:row-start-1 {% endif %}"
+      class="{{ page.image-aspect-ratio }} -mx-4 lg:mx-0 {% if page.alternative-layout %} lg:col-start-1 lg:row-start-1 {% endif %}"
     >
       <img
-        class="{{ page.image-style }} mr-auto md:mt-6 md:rounded-xl md:shadow-lg border-t-4 border-b-4 md:border-4 border-gray-600"
+        class="{{ page.image-style }} mr-auto lg:mt-6 lg:rounded-xl lg:shadow-lg border-t-4 border-b-4 lg:border-4 border-gray-600"
         src="/assets/img/{{ page.image }}"
         loading="lazy"
         alt='Immagine per la sezione "{{ page.title }}"'
       />
     </div>
     <div
-      class="md:hidden max-w-prose text-lg font-light space-y-4 pt-6 leading-relaxed"
+      class="lg:hidden max-w-prose text-lg font-light space-y-4 pt-6 leading-relaxed"
     >
       {{ content }}
     </div>
 
     {% if quote %}
-    <div class="md:col-span-3 pt-8 md:pt-16">{{ quote.output }}</div>
+    <div class="lg:col-span-3 pt-8 lg:pt-16">{{ quote.output }}</div>
     {% endif %}
   </div>
 </div>

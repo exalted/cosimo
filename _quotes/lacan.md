@@ -1,7 +1,7 @@
 ---
 layout: "quote"
 author: "J. Lacan"
-bg-color: "bg-transparent md:bg-white"
+bg-color: "bg-transparent lg:bg-white"
 image: "lacan.jpg"
 ---
 

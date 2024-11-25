@@ -2,27 +2,27 @@
 layout: "default"
 ---
 
-<div class="py-4 md:py-12">
+<div class="py-4 lg:py-12">
   <div
-    class="2xl:container mx-auto px-4 flex flex-col md:grid md:grid-cols-3 gap-4"
+    class="2xl:container mx-auto px-4 flex flex-col lg:grid lg:grid-cols-3 gap-4"
   >
     <div
-      class="md:col-span-2 max-w-prose text-xl font-light space-y-2 md:space-y-6 leading-relaxed order-2 md:order-1"
+      class="lg:col-span-2 max-w-prose text-xl font-light space-y-2 lg:space-y-6 leading-relaxed order-2 lg:order-1"
     >
       <hr
-        class="border-4 border-green-500 mx-auto md:mx-0 w-16 md:w-20 mb-2 md:mb-4"
+        class="border-4 border-green-500 mx-auto lg:mx-0 w-16 lg:w-20 mb-2 lg:mb-4"
       />
       <h3
-        class="text-center md:text-left text-2xl md:text-4xl font-bold text-gray-600"
+        class="text-center lg:text-left text-2xl lg:text-4xl font-bold text-gray-600"
       >
         {{ page.title }}
       </h3>
       {% if page.image %}
       <div
-        class="-mx-4 md:mx-0 {% if page.alternative-layout %} md:col-start-1 md:row-start-1 {% endif %}"
+        class="-mx-4 lg:mx-0 {% if page.alternative-layout %} lg:col-start-1 lg:row-start-1 {% endif %}"
       >
         <img
-          class="w-full md:w-5/6 mr-auto md:mt-6 md:rounded-xl md:shadow-lg border-t-4 border-b-4 md:border-4 border-gray-600"
+          class="w-full lg:w-5/6 mr-auto lg:mt-6 lg:rounded-xl lg:shadow-lg border-t-4 border-b-4 lg:border-4 border-gray-600"
           src="/assets/img/{{ page.image }}"
           alt='Immagine per l&apos;articolo "{{ page.title }}"'
         />
@@ -32,10 +32,10 @@ layout: "default"
       {{ content }}
     </div>
     <div
-      class="text-xl font-light space-y-2 md:space-y-6 leading-relaxed text-center md:text-left order-1 md:order-2"
+      class="text-xl font-light space-y-2 lg:space-y-6 leading-relaxed text-center lg:text-left order-1 lg:order-2"
     >
       <h3
-        class="text-center md:text-left text-2xl md:text-2xl font-bold text-gray-400"
+        class="text-center lg:text-left text-2xl lg:text-2xl font-bold text-gray-400"
       >
         Tutti gli Articoli
       </h3>
