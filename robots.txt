@@ -8,6 +8,5 @@ User-agent: *
 Sitemap: https://cosimocomparini-psicologo.it/sitemap.xml
 
 {% for page in pages %}
-Disallow: {{ page.url }}
 Disallow: {{ page.url | split: "" | reverse | join: "" | replace_first: 'lmth.', '' | split: "" | reverse | join: "" }}
 {% endfor %}
