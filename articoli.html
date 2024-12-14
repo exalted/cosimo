@@ -9,19 +9,19 @@ sitemap: false
 {% assign last_post = site.posts | first %}
 
 <!doctype html>
-<html>
+<html lang="it">
   <head>
     <meta name="robots" content="noindex" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirecting...</title>
+    <title>Reindirizzamento in corso...</title>
     <meta http-equiv="refresh" content="0; url={{ last_post.url }}" />
     <script>
       window.location.href = "{{ last_post.url }}";
     </script>
   </head>
   <body>
-    If you are not redirected, <a href="{{ last_post.url }}">click here</a>.
+    Se non vieni reindirizzato, <a href="{{ last_post.url }}">clicca qui</a>.
   </body>
 </html>
